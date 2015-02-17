@@ -99,6 +99,7 @@ extern {
     pub fn ivar_getTypeEncoding(ivar: *const Ivar) -> *const c_char;
 
     pub fn objc_msgSend(obj: *mut Object, op: Sel, ...) -> *mut Object;
+    pub fn objc_msgSend_fpret(obj: *mut Object, op: Sel, ...) -> f64;
     pub fn objc_msgSend_stret(obj: *mut Object, op: Sel, ...);
     pub fn objc_msgSendSuper(sup: *const Super, op: Sel, ...) -> *mut Object;
     pub fn objc_msgSendSuper_stret(sup: *const Super, op: Sel, ... );
